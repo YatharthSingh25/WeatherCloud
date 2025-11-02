@@ -1,7 +1,7 @@
 import "./day.js";
-import { API_KEY } from "./../secret/secret.js";
 import { today } from "./day.js";
 
+const API_KEY = "216e7d3431e664dd22f4a512c739b3a0";
 const variables = document.querySelector(":root");
 const date = new Date();
 const timeNow = date.getHours();
