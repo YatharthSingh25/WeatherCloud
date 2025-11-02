@@ -1,0 +1,27 @@
+@import "variables";
+
+.search-history__title {
+	font: {
+		size: 24px;
+		weight: 600;
+	}
+	margin-top: 10px;
+}
+
+.input-btn-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.search-history__btn {
+	margin-bottom: 10px;
+}
+
+.search-history__container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 10px;
+}

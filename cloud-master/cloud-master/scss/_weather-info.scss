@@ -1,0 +1,39 @@
+.details {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    @media (max-width: $tablet) {
+        height: 80px;
+        flex-shrink: 0;
+    }
+}
+
+.details__humidity,
+.details__speed {
+    @include flex-center;
+    column-gap: 10px;
+
+    img {
+        width: 40px;
+    }
+}
+
+.humidity,
+.speed {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media screen and (max-width: $mobile) {
+        justify-content: space-between;
+    }
+}
+
+.humidity__title,
+.speed__title {
+    font-weight: 100;
+}

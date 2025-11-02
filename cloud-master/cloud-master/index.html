@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="STEPAN DORDIAI" />
+		<meta name="keywords" content="Weather daily, weather hourly, date" />
+		<title>cloud.</title>
+		<link rel="stylesheet" href="./scss/main.css" />
+
+		<!-- Favicons -->
+
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="./public/favicons/cloud-v2.svg"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./public/favicons/cloud-v2.png"
+		/>
+		<script type="module" src="js/main.js" defer></script>
+	</head>
+
+	<body>
+		<header class="header">
+			<a class="header__logo" href="index.html">
+				<img src="./public/logo/logo.svg" alt="" />
+				<p>cloud.</p>
+			</a>
+			<div class="header__day">--/--/--</div>
+		</header>
+		<div class="wrapper">
+			<div class="search-history-container">
+				<form action="" class="form" id="form">
+					<input
+						type="text"
+						class="form__input"
+						placeholder="Enter city name"
+					/>
+					<button class="form__btn">
+						<img
+							src="./public/icons/search-interface-symbol.png"
+							alt="Search"
+						/>
+					</button>
+				</form>
+				<div class="search-history">
+					<p class="search-history__title">Search history</p>
+					<button class="search-history__btn">Clear all history</button>
+					<div class="search-history__container"></div>
+				</div>
+			</div>
+			<div class="weather-container none">
+				<div class="left-section">
+					<div class="weather">
+						<div>
+							<div class="weather__temp">--°c</div>
+							<div class="weather__city">-</div>
+							<div class="weather__type">-</div>
+						</div>
+						<img class="weather-img" src="" alt="" />
+					</div>
+					<div class="weather-hourly-container"></div>
+				</div>
+				<div class="right-section">
+					<div class="weather-daily-container">
+						<div class="day-container first-day-container"></div>
+						<div class="day-container second-day-container"></div>
+						<div class="day-container third-day-container"></div>
+						<div class="day-container fourth-day-container"></div>
+						<div class="day-container fifth-day-container"></div>
+					</div>
+					<div class="details">
+						<div class="details__humidity">
+							<img src="./public/icons/humidity.png" alt="Humidity" />
+							<div class="humidity">
+								<div id="humidity">--%</div>
+								<div class="humidity__title">Humidity</div>
+							</div>
+						</div>
+						<div class="details__speed">
+							<img src="./public/icons/wind.png" alt="Wind" />
+							<div class="speed">
+								<div id="speed">--.-- km/h</div>
+								<div class="speed__title">Wind speed</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<p class="creator">
+				Made with love by
+				<a href="https://stepandordiai.netlify.app/" target="_blank"
+					>STEPAN DORDIAI</a
+				>
+			</p>
+			<div>
+				<p class="copyright">© 2024 - <span id="year-now"></span> cloud.</p>
+				<p>All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+</html>
